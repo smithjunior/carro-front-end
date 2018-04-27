@@ -35,6 +35,8 @@
                             <th ng-click="ordenar('marca_id')"><a>marca</a></th>
                             <th ng-click="ordenar('modelo')"><a>modelo</a></th>
                             <th ng-click="ordenar('ano')"><a>ano</a></th>
+                            <th ng-click="ordenar('descricao')"><a>descrição</a></th>
+                            <th ng-click="ordenar('vendido')"><a>vendido</a></th>
                             <th><center>#</center></th>
                         </tr>
 
@@ -44,6 +46,8 @@
                             <td>{{carro.marca.descricao}}</td>
                             <td>{{carro.modelo}}</td>
                             <td>{{carro.ano}}</td>
+                            <td>{{carro.descricao}}</td>
+                            <td>{{carro.vendido?'Sim':'Não'}}</td>
                             <td >
                                 <center>
                                     <a href="#/carros/{{carro.id}}">

@@ -34,6 +34,22 @@
                             <input type="number" id="ano" class="form-control" placeholder="Ano do Carro" ng-model="carro.ano" required>
                         </div>
                     </div>
+
+
+                    <div class="form-group">
+                        <label for="vendido" class="col-sm-2 control-label" >Vendido?</label>
+                        <div class="col-sm-10">
+                            <select id="vendido" ng-model="carro.vendido" class="form-control" ng-options="vendido.id as vendido.value for vendido in [{'id':0,'value':'Não'},{'id':1,'value':'Sim'}] " required>
+                                <option value="">Carro Vendido? </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao" class="col-sm-2 control-label" >Descrição</label>
+                        <div class="col-sm-10">
+                            <textarea id="descricao" class="form-control" ng-model="carro.descricao"></textarea>
+                        </div>
+                    </div>
                 </form>
 
             </div>

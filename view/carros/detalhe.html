@@ -1,7 +1,7 @@
 <section class="content-header" >
     <h1>
-        Detalhe do Maquina
-        <small>Registro detalhado e movimentações do maquina!</small>
+        Detalhe do Carro
+        <small>Registro detalhado do carro!</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="#/"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -29,6 +29,10 @@
                     <dd>{{carro.modelo}}</dd>
                     <dt>Ano</dt>
                     <dd>{{carro.ano}}</dd>
+                    <dt>Descrição</dt>
+                    <dd>{{carro.descricao}}</dd>
+                    <dt>Vendido?</dt>
+                    <dd>{{carro.vendido?'Sim':'Não'}}</dd>
                 </dl>
             </div>
             <div class="box box-footer">
